@@ -175,7 +175,7 @@ function check(name,sum)
         socket.emit("gameover",{name:name})
 
         setTimeout(()=>{
-            sum%2 == 0 ? alert("You lost the game") : alert("You won the game")
+            sum%2 == 0 ? alert("X won the game") : alert("O won the game")
 
             setTimeout(()=>{
                 location.reload()
